@@ -1,17 +1,17 @@
 package org.example;
-
+import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
-
-        System.out.printf("Hello and welcome!");
 
 
-        for (int i = 1; i <= 5; i++) {
+    public  static void main(String[] args) {
+        ArrayList<Customer> users = new ArrayList<Customer>();
 
+        Customer user1 = new Customer();
+        user1.setInfo("1","bill", "B@g", "085");
+        System.out.println(user1);
 
-            System.out.println("i = " + i);
-        }
+        users.add(user1);
     }
 }
 
